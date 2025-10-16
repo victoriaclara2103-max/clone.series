@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/158194/isolated/preview/11507ef5615c554fe88fc22c86768501-icone-de-terra-simples.png" type="image/x-icon">
+  <title>Site de notícias</title>
+</head>
+<body>
+  <header>
+    <div class="header-mobile">
+      <h1>Portal Filmes & Séries</h1>
+      <img class="icone-menu" src="./image/icone-menu.svg" alt="Menu">
+    </div>
+
+    <div class="menu-mobile">
+      <nav>
+        <a href="index.html">Inicío</a>
+        <a href="pagina-filmes.html">Filmes</a>
+        <a href="pagina-series.html">Séries</a>
+        <a href="pagina-lançamentos.html">Lançamentos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+
+    <nav>
+      <a href="index.html">Inicío</a>
+      <a href="pagina-filmes.html">Filmes</a>
+      <a href="pagina-series.html">Séries</a>
+      <a href="pagina-lançamentos.html">Lançamentos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="noticia-principal">
+      <img
+        src="https://i0.wp.com/tshirtsyndicate.com/wp-content/uploads/2016/05/Breaking-Bad-banner-e1510061278959.jpg?fit=1200%2C531&ssl=1"
+        alt="Banner da série Breaking Bad">
+      <h2>Breaking Bad: O Fenômeno das Séries</h2>
+      <p>Considerada uma das melhores séries de todos os tempos, Breaking Bad acompanha a transformação de Walter White,
+        um professor de química que se torna um dos maiores criminosos do Novo México. A série conquistou fãs no mundo
+        inteiro e revolucionou a TV.</p>
+    </section>
+
+    <section class="container-noticias">
+      <article class="noticia-filme-serie">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR08b4RjFZHsVLf6CtIAOZn6cSxGfWlRQyBzZTVYjUzGzs372osgh0ATR_268FMM-nwtZw&usqp=CAU" alt="Banner em cartoon de Breaking Bad">
+        <h3>Breaking Bad: O Fenômeno das Séries</h3>
+        <p>Considerada uma das melhores séries de todos os tempos, Breaking Bad acompanha a transformação de Walter White, um professor de química que se torna um dos maiores criminosos do Novo México.</p>
+      </article>
+
+      <article class="noticia-filme-serie">
+        <img src="https://m.media-amazon.com/images/I/61ysQL20S-L._UF894,1000_QL80_.jpg" alt="Banner de Better Call Saul">
+        <h3>Better Call Saul: O Advogado Mais Carismático da TV</h3>
+        <p>Spin-off de Breaking Bad, a série mostra a origem de Saul Goodman e como ele se tornou o advogado mais excêntrico do universo das séries.</p>
+      </article>
+
+      <article class="noticia-filme-serie">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/d/d2/You_%28s%C3%A9rie_de_TV%29_intert%C3%ADtulo.png" alt="Banner da série You">
+        <h3>You: Até Onde Vai a Obsessão?</h3>
+        <p>Em You, acompanhamos Joe Goldberg, um homem aparentemente comum, mas que esconde uma obsessão perigosa por quem se apaixona.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portal Filmes & Séries. Desenvolvido por Clara Vitória.</p>
+  </footer>
+</body>
+
+<script>
+  const iconeMenu = document.querySelector('.icone-menu');
+  const menuAtivo = document.querySelector('.menu-mobile');
+  iconeMenu.addEventListener('click', () => {
+    menuAtivo.classList.toggle('menu-ativo');
+  });
+</script>
+
+</html>
